@@ -1,0 +1,321 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+li {
+  list-style: none;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 10px 0;
+}
+h2 {
+  font-size: 48px;
+  color: #f44336;
+  margin: 10px 0;
+}
+hr {
+  width: 50px;
+  border: 5px solid red;
+  border-radius: 4px;
+  margin: 10px 0 40px 0;
+}
+img {
+  width: 100%;
+}
+main {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+header {
+  background-color: #f44336;
+  color: #fff;
+  width: calc(100% - 32px);
+  padding: 8px 16px;
+  position: fixed;
+  display: none;
+  z-index: 999;
+}
+
+header > h2 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  margin-left: 70px;
+}
+
+main section:nth-of-type(1) > label > span {
+	cursor: pointer;
+  position: fixed;
+  top: 16px;
+  left: 15px;
+  z-index: 9999;
+  padding: 8px 16px;
+  display: none;
+  transition-duration: 0.5s;
+}
+
+main section:nth-of-type(1) > label > span:hover  {
+  background-color: #ccc;
+}
+
+main section:nth-of-type(1) > #menu {
+  display: none;
+}
+
+main section:nth-of-type(1) > #menu:checked + label > nav{
+  margin-left: 0px !important;
+}
+
+main section:nth-of-type(1) > label > span > div {
+	width: 20px;
+  height: 2px;
+  border-radius: 4px;
+	background-color: #fff;
+	margin: 5px 0;
+	transition-duration: 0.5s;	
+}
+
+main section:nth-of-type(1) >#menu:checked + label > span > div {
+	background-color: #f9f9f9;
+}
+
+main section:nth-of-type(1) >#menu:checked + label > span > div:first-of-type  {
+  transform: rotate(-40deg) translate(-5px, 7px);
+}
+
+main section:nth-of-type(1) >#menu:checked + label > span > div:nth-of-type(2)  {
+	opacity: 0;
+}
+
+main section:nth-of-type(1) >#menu:checked + label > span > div:last-of-type  {
+	transform: rotate(40deg) translate(-3px, -5px);
+}
+
+main section:nth-of-type(1)  nav {
+  background-color: #f44336;
+  color: #fff;
+  height: 100vh;
+  padding: 40px 16px;
+  position: fixed;
+  width: 268px;
+  transition-duration: 0.5s;
+  margin-left: 0;
+  z-index: 999;
+}
+main section:nth-of-type(1)  nav h2 {
+  margin: 10px 0 ;
+  padding: 64px 0 64px 16px;
+  font-size: 24px;
+  color: #fff;
+}
+main section:nth-of-type(1)  nav ul {
+  margin: 0;
+  padding: 0 16px 0 0;
+}
+main section:nth-of-type(1)  nav ul li > a {
+  color: #fff;
+  font-weight: bold;
+  line-height: 1.5;
+  font-size: 18px;
+  width: 100%;
+  display: inline-block;
+  padding: 8px;
+}
+main section:nth-of-type(1)  nav ul li > a:hover {
+  color: black;
+  background-color: #fff;
+}
+main section:nth-of-type(2) {
+  padding: 80px 55px;
+}
+main section:nth-of-type(2) > div:nth-of-type(1) > h1 {
+  font-size: 64px;
+  margin: 10px 0;
+}
+main section:nth-of-type(2) > section {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 16px;
+}
+
+main section:nth-of-type(2) > section img {
+  opacity: 0.8;
+}
+
+main section:nth-of-type(2) > section img:hover {
+  opacity: 1;
+}
+
+main section:nth-of-type(2) > div:nth-of-type(4) {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 16px;
+}
+
+main section:nth-of-type(2) > div:nth-of-type(4) > div {
+  background-color: #f1f1f1;
+}
+
+main section:nth-of-type(2) > div:nth-of-type(4) > div > div {
+  padding: 15px;
+}
+
+main section:nth-of-type(2) > div:nth-of-type(4) > div > img {
+  filter: grayscale(75%);  
+}
+
+main section:nth-of-type(2) > div:nth-of-type(4) > div > div > h3 {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+main section:nth-of-type(2) > div:nth-of-type(4) > div > div > p:first-of-type {
+  opacity: 0.6;
+}
+
+main section:nth-of-type(2) > div:nth-of-type(5) {
+  margin-top: 64px;
+}
+
+main section:nth-of-type(2) > div:nth-of-type(6) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16px;
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+main section:nth-of-type(2) > div:nth-of-type(6) hr {
+  width: 100%;
+  border: 0.5px solid #ddd;
+  margin: 0;
+}
+
+main section:nth-of-type(2) > div:nth-of-type(6) > div > div {
+  background-color: #f1f1f1;
+  padding: 8px 0;
+}
+
+main section:nth-of-type(2) > div:nth-of-type(6) > div p {
+  margin: 16px 0;
+  padding: 0;
+}
+
+main section:nth-of-type(2) > div:nth-of-type(6) > div:first-of-type > p, main section:nth-of-type(2) > div:nth-of-type(6) > div:last-of-type > p{
+  margin: 0;
+  color: #fff;
+  padding: 32px 16px;
+  font-size: 24px;
+}
+
+main section:nth-of-type(2) > div:nth-of-type(6) > div:first-of-type > p {
+  background-color: #616161;
+
+}
+
+main section:nth-of-type(2) > div:nth-of-type(6) > div:last-of-type > p {
+  background-color: #f44336;
+}
+
+main section:nth-of-type(2) > div:nth-of-type(6) > div > div > p  span {
+  opacity: 0.6;
+}
+
+main section:nth-of-type(2) > div:nth-of-type(6) > div > div > p b {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+main section:nth-of-type(2) > div:nth-of-type(6) > div > div > div {
+  padding: 24px 16px;
+}
+
+main section:nth-of-type(2) > div:nth-of-type(6) > div > div > div a {
+  padding: 12px 24px;
+}
+
+main section:nth-of-type(2) > div:nth-of-type(6) > div:first-of-type > div a {
+  background-color: #fff;
+  color: #000
+}
+
+main section:nth-of-type(2) > div:nth-of-type(6) > div:last-of-type > div a {
+  background-color: #f44336;
+  color: #fff
+}
+
+main section:nth-of-type(2) > div:nth-of-type(6) > div > div > div a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+main section:nth-of-type(2) > form input {
+  width: calc(100% - 16px);
+  padding: 8px;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+main section:nth-of-type(2) > form button {
+  background-color: #f44336;
+  color: #fff;
+  display: inline-block;
+  width: calc(100% + 4px);
+  border: none;
+  padding: 12px 0;
+  font-size: 18px;
+}
+
+main section:nth-of-type(2) > form button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+footer {
+  background-color: #f1f1f1;
+  padding: 32px;
+  text-align: right;
+}
+
+footer p > a {
+  color: #000;
+  text-decoration: underline;
+} 
+
+@media only screen and (max-width: 993px) {
+  nav {
+    margin-left: -300px !important;
+  }
+
+ header {
+    display: block;
+  }
+
+  main section:nth-of-type(1) > label > span {
+    display: block; 
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  main section:nth-of-type(2) {
+    padding: 70px 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main section:nth-of-type(2) > section, main section:nth-of-type(2) > div:nth-of-type(4),  main section:nth-of-type(2) > div:nth-of-type(6) {
+    grid-template-columns: 1fr;
+  }
+}
